@@ -1,0 +1,19 @@
+version: "3.1"
+services:
+    db:
+        #? Set container name
+        container_name: songs_db
+        image: mongo:latest
+
+        #? Restart if down
+        restart: always
+
+        #? Environment file
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: rameshmanepalli14
+            MONGO_INITDB_ROOT_PASSWORD: ramesh1234
+            MONGO_INITDB_DATABASE: songs_db
+
+        #? Ports
+        ports:
+            - 27017:27017

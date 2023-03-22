@@ -1,0 +1,33 @@
+{
+  "name": "songs-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "local:start": "cross-env NODE_ENV=local nodemon server.js",
+    "dev:start": "cross-env NODE_ENV=dev nodemon server.js",
+    "prod:start": "cross-env NODE_ENV=prod node server.js",
+    "prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rameshmanepalli1234/songs-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rameshmanepalli1234/songs-backend/issues"
+  },
+  "homepage": "https://github.com/rameshmanepalli1234/songs-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.6"
+  }
+}
