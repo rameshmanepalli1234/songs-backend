@@ -23,7 +23,7 @@ class SongQuery {
     static async updateOne(query, songBody){
         //? Check if song exists
         const foundSongEntityResponse = await SongQuery.getOne(query)
-        if(foundSongEntityResponse === 404){
+        if(foundSongEntityResponse.status === 404){
             return foundSongEntityResponse
         }
 
@@ -44,7 +44,7 @@ class SongQuery {
     static async deleteOne(query){
         //? Check if song exists
         const foundSongEntityResponse = await SongQuery.getOne(query)
-        if(foundSongEntityResponse === 404){
+        if(foundSongEntityResponse.status === 404){
             return foundSongEntityResponse
         }
 

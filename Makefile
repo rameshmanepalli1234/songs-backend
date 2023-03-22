@@ -6,3 +6,10 @@ run_dev:
 
 run_prod:
 	npm run prod:start
+
+
+compose_dev_up:
+	docker-compose -f docker-compose.dev.yml up -d --build
+
+compose_dev_down:
+	docker-compose -f docker-compose.dev.yml down
